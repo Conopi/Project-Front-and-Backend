@@ -1,0 +1,10 @@
+# Используем образ PostgreSQL
+FROM postgres:latest
+
+ENV POSTGRES_DB=Feedback
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=Zopa_kek12
+
+ADD init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432

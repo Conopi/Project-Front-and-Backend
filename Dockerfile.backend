@@ -1,0 +1,16 @@
+# Используем образ с Node.js
+FROM node:latest
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Копируем зависимости и исходный код
+COPY backend/package.json backend/package-lock.json ./
+RUN npm install
+COPY backend ./
+
+# Открываем порт 9000
+EXPOSE 9000
+
+# Команда для запуска сервера
+CMD ["node", "server.js"]

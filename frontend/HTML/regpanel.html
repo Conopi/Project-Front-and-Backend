@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Contact us Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="../CSS/regpanel.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text">Contact us Form</div>
+    <form id="contactForm" action="#">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" name="firstName" required>
+          <div class="underline"></div>
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-data">
+          <input type="text" name="lastName" required>
+          <div class="underline"></div>
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="email" name="email" required>
+          <div class="underline"></div>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="input-data">
+          <input type="tel" name="phoneNumber" required>
+          <div class="underline"></div>
+          <label for="phoneNumber">Your phone number</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data textarea">
+          <textarea rows="8" cols="80" name="message" required></textarea>
+          <br />
+          <div class="underline"></div>
+          <label for="message">Write your message</label>
+          <br />
+        </div>
+      </div>
+      <div class="form-row submit-btn">
+        <div class="input-data">
+          <div class="inner"></div>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src = "../JS/regpanel.js"></script>
+</body>
+</html>
